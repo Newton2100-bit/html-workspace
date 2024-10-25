@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registartion Form</title>
+    <body>
+       <h1>User Registartion</h1>
+       <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="name..." required>
+        <br> 
+        <hr>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email..." required>
+        <br>
+        <hr>
+        <br>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="pasesword..." required>
+        <br>
+        <hr>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="phone..." required>
+        <br>
+        <hr>
+        <br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dod" name="dob" placeholder="date of birth..." required>
+        <br> 
+        <hr>
+        <br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" aria-placeholder="select your gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <hr>
+        <br>
+
+        <label for="profilepic">profile Picture:</label>
+        <input type="file" id="profilepic" name="profilepic" accept="image/*">
+        <br>
+        <hr>
+        <br>
+        <button type="submit">Register</button>
+       </form>
+    </body>
+</html>
